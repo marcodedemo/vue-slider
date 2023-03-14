@@ -59,6 +59,12 @@ createApp({
 
             this.activeSlideIndex = this.slides.length - 1;
         }        
+    },
+
+    // show thumbnail at click function
+    showThumbAtClick(valore){
+
+        this.activeSlideIndex = valore;
     }
   }
 

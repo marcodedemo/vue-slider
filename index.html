@@ -46,9 +46,9 @@
 
 
                     <!-- cycled thumbnail div -->
-                    <div v-for="(thumbnail, index) in slides" :class="index == activeSlideIndex ? 'active':''" class="thumb">
+                    <div v-for="(thumbnail, index) in slides" :class="index == activeSlideIndex ? 'active':''" class="thumb" @click="showThumbAtClick(index)">
 
-                        <img :src="thumbnail.image" alt="Svezia">
+                        <img :src="thumbnail.image" alt="img">
 
                     </div>
                     
