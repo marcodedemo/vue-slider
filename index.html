@@ -20,7 +20,7 @@
         <div class="container">
 
             <!-- slideshow wrapper -->
-            <div class="slider-wrapper" tabindex="0">
+            <div @mouseover="stopAutoplay" @mouseleave="autoplay" class="slider-wrapper" tabindex="0">
 
                 <!-- slideshow main img + text -->
                 <div class="item">
@@ -52,7 +52,6 @@
 
                     </div>
                     
-
                 </div>
 
             </div>

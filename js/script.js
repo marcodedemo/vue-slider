@@ -35,6 +35,9 @@ createApp({
         // variabile indice di visualizzazione
         activeSlideIndex: 0,
 
+        // variabile assegnata al timer
+        timer:"",
+
     }
   },
 
@@ -72,11 +75,17 @@ createApp({
 
         let app = this;
 
-        setInterval(function(){
+        timer = setInterval(function(){
             app.nextThumbnail();
         }, 3000);
 
     },
+
+    // function that stop autoplay interval
+    stopAutoplay(){
+
+        clearInterval(timer)
+    }
 
     },
 
