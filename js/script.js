@@ -65,7 +65,26 @@ createApp({
     showThumbAtClick(valore){
 
         this.activeSlideIndex = valore;
+    },
+
+    // function that activate autoplay
+    autoplay(){
+
+        let app = this;
+
+        setInterval(function(){
+            app.nextThumbnail();
+        }, 3000);
+
+    },
+
+    },
+
+    // function that do something on page load
+    created(){
+
+        this.autoplay();
     }
-  }
+
 
 }).mount('#app')
