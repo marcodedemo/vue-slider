@@ -73,10 +73,9 @@ createApp({
     // function that activate autoplay
     autoplay(){
 
-        let app = this;
 
-        timer = setInterval(function(){
-            app.nextThumbnail();
+        timer = setInterval(() => {
+            this.nextThumbnail();
         }, 3000);
 
     },
@@ -90,7 +89,7 @@ createApp({
     },
 
     // function that do something on page load
-    created(){
+    mounted(){
 
         this.autoplay();
     }
