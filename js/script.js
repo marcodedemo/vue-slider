@@ -74,7 +74,7 @@ createApp({
     autoplay(){
 
 
-        timer = setInterval(() => {
+        this.timer = setInterval(() => {
             this.nextThumbnail();
         }, 3000);
 
@@ -83,7 +83,7 @@ createApp({
     // function that stop autoplay interval
     stopAutoplay(){
 
-        clearInterval(timer)
+        clearInterval(this.timer)
     }
 
     },
